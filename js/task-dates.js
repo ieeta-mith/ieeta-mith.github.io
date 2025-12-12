@@ -22,23 +22,25 @@ function getTaskStartDate() {
         console.error('PROJECT_START_DATE deve ser definido em project-config.js');
         return null;
     }
-    if (typeof TASK_START_MONTH_OFFSET === 'undefined') {
+    const offset = typeof TASK_START_MONTH_OFFSET !== 'undefined' ? TASK_START_MONTH_OFFSET : window.TASK_START_MONTH_OFFSET;
+    if (typeof offset === 'undefined') {
         console.error('TASK_START_MONTH_OFFSET deve ser definido antes de carregar task-dates.js');
         return null;
     }
-    return addMonths(PROJECT_START_DATE, TASK_START_MONTH_OFFSET);
+    return addMonths(PROJECT_START_DATE, offset);
 }
 
 // Atualizar período do projeto
 function updateProjectPeriod() {
-    if (typeof TASK_DURATION_MONTHS === 'undefined') {
+    const duration = typeof TASK_DURATION_MONTHS !== 'undefined' ? TASK_DURATION_MONTHS : window.TASK_DURATION_MONTHS;
+    if (typeof duration === 'undefined') {
         console.error('TASK_DURATION_MONTHS deve ser definido antes de carregar task-dates.js');
         return;
     }
     const taskStartDate = getTaskStartDate();
     if (!taskStartDate) return;
     
-    const endDate = addMonths(taskStartDate, TASK_DURATION_MONTHS);
+    const endDate = addMonths(taskStartDate, duration);
     const periodElement = document.getElementById('period-range');
     if (periodElement) {
         periodElement.textContent = `${formatDate(taskStartDate)} - ${formatDate(endDate)}`;

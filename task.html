@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Task - MITH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { mith: { dark: '#0a2540', blue: '#005a9c', teal: '#00a8b4', light: '#e6f7f9' } } } }
+        }
+    </script>
+</head>
+<body class="font-sans bg-slate-50 text-slate-700">
+
+    <div id="nav-container"></div>
+
+    <header id="task-header" class="bg-mith-teal text-white pt-32 pb-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-7xl mx-auto">
+            <span id="task-number" class="uppercase tracking-widest text-sm font-semibold opacity-80">Task</span>
+            <h1 id="task-title" class="text-3xl md:text-4xl font-bold mt-2 mb-4">Task Title</h1>
+            <p id="task-subtitle" class="text-lg opacity-90 max-w-2xl">Task subtitle</p>
+        </div>
+    </header>
+
+    <main class="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+        
+        <div class="md:col-span-2 space-y-8" id="task-content">
+            <!-- Conteúdo será injetado aqui -->
+        </div>
+
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-mith-dark mb-4 border-b pb-2">Timeline</h3>
+                <div class="flex items-center text-slate-600 mb-2">
+                    <span class="w-24 font-semibold text-xs uppercase text-slate-400">Duration</span>
+                    <span id="duration">-</span>
+                </div>
+                <div class="flex items-center text-slate-600">
+                    <span class="w-24 font-semibold text-xs uppercase text-slate-400">Period</span>
+                    <span class="text-sm" id="period-range">-</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-mith-dark mb-4 border-b pb-2">Key Deliverables</h3>
+                <ul id="deliverables-list" class="space-y-3 text-sm text-slate-600">
+                    <!-- Deliverables serão injetados aqui -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/load-nav.js"></script>
+    <script src="js/project-config.js"></script>
+    <script src="js/task-loader.js"></script>
+    <script src="js/task-dates.js"></script>
+
+</body>
+</html>
