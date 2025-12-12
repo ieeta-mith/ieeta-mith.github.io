@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Privacy-Preserving ETL - MITH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { mith: { dark: '#0a2540', blue: '#005a9c', teal: '#00a8b4', light: '#e6f7f9' } } } }
+        }
+    </script>
+</head>
+<body class="font-sans bg-slate-50 text-slate-700">
+    <div id="nav-container"></div>
+    <header class="bg-mith-blue text-white pt-32 pb-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-7xl mx-auto">
+            <span class="uppercase tracking-widest text-sm font-semibold opacity-80">Task 2</span>
+            <h1 class="text-3xl md:text-4xl font-bold mt-2 mb-4">ETL for Data Harmonization & Privacy</h1>
+            <p class="text-lg opacity-90 max-w-2xl">Enabling secure, collaborative data integration from diverse healthcare sources.</p>
+        </div>
+    </header>
+
+    <main class="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+        
+        <div class="md:col-span-2 space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold text-mith-dark mb-4">Overview</h2>
+                <p class="leading-relaxed text-slate-600 mb-4">
+                    This task develops a collaborative ETL (Extract, Transform, Load) tool that allows multiple stakeholders to standardize data efficiently. A critical component is the integration of privacy-preserving plugins that safeguard sensitive data during the transformation process.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-mith-dark mb-4">Methodology</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-mith-blue">
+                        <h3 class="font-bold text-mith-dark mb-2">Collaborative Tool</h3>
+                        <p class="text-sm text-slate-600">
+                            Based on open-source orchestration (Apache Airflow), featuring version control, role-based access, and data lineage tracking.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-mith-teal">
+                        <h3 class="font-bold text-mith-dark mb-2">Privacy Plugins</h3>
+                        <p class="text-sm text-slate-600">
+                            Modules implementing differential privacy, anonymization, and encryption directly into the ETL pipeline to ensure utility without compromising security.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+             <section>
+                <h2 class="text-2xl font-bold text-mith-dark mb-4">Privacy Risk Assessment</h2>
+                <p class="text-slate-600">
+                    We will also develop an evaluation framework to assess privacy risks before data publishing, analyzing potential leakage and ensuring GDPR compliance.
+                </p>
+            </section>
+        </div>
+
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-mith-dark mb-4 border-b pb-2">Timeline</h3>
+                <div class="flex items-center text-slate-600 mb-2">
+                    <span class="w-24 font-semibold text-xs uppercase text-slate-400">Duration</span>
+                    <span>8 Months</span>
+                </div>
+                <div class="flex items-center text-slate-600">
+                    <span class="w-24 font-semibold text-xs uppercase text-slate-400">Period</span>
+                    <span class="text-sm" id="period-range">Mar 2026 - Oct 2026</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-lg font-bold text-mith-dark mb-4 border-b pb-2">Key Deliverables</h3>
+                <ul class="space-y-3 text-sm text-slate-600">
+                    <li class="flex items-center justify-between">
+                        <span>Collaborative ETL Tool</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500" data-deliverable-months="4">Jun 2026</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span>Privacy Plugins</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500" data-deliverable-months="6">Aug 2026</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                        <span>Risk Eval Framework</span>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500" data-deliverable-months="8">Oct 2026</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/load-nav.js"></script>
+
+    <script>
+        // Configuração específica da Task 2
+        const TASK_START_DATE = new Date(2026, 6, 1); // Março 2026 (mês 2, pois janeiro é 0)
+        const TASK_DURATION_MONTHS = 8; // Duração em meses
+    </script>
+    <script src="js/task-dates.js"></script>
+
+</body>
+</html>

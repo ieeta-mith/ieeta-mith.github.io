@@ -1,0 +1,58 @@
+
+<nav class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+        <div class="flex justify-between items-center py-4">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="images/logo.png" alt="MITH Logo" class="h-12 w-auto">
+                <div class="hidden md:block">
+                    <span class="block text-xl font-bold text-mith-dark leading-tight"></span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="index.html" class="text-mith-teal font-bold transition">Home</a>
+                
+                <div class="relative group">
+                    <button class="flex items-center hover:text-mith-teal transition focus:outline-none py-2">
+                        <span>Research Tasks</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 mt-0 w-64 bg-white border border-slate-100 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50">
+                        <a href="task1.html" class="block px-4 py-3 hover:bg-slate-50 border-b border-slate-50">
+                            <span class="block text-sm font-bold text-mith-dark">Task 1</span>
+                            <span class="block text-xs text-slate-500">LLMs & Knowledge Extraction</span>
+                        </a>
+                        <a href="task2.html" class="block px-4 py-3 hover:bg-slate-50 border-b border-slate-50">
+                            <span class="block text-sm font-bold text-mith-dark">Task 2</span>
+                            <span class="block text-xs text-slate-500">Privacy-Preserving ETL</span>
+                        </a>
+                        <a href="task3.html" class="block px-4 py-3 hover:bg-slate-50">
+                            <span class="block text-sm font-bold text-mith-dark">Task 3</span>
+                            <span class="block text-xs text-slate-500">Compliance & Sustainability</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="team.html" class="hover:text-mith-teal transition">Team</a>
+                <a href="results.html" class="hover:text-mith-teal transition">Results</a>
+                <a href="jobs.html" class="text-mith-blue font-bold hover:text-mith-dark transition border border-mith-blue px-4 py-2 rounded-full hover:bg-mith-blue hover:text-white text-sm">Open Positions</a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-slate-600 hover:text-mith-teal focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-4 shadow-lg">
+        <a href="task1.html" class="block font-medium hover:text-mith-teal">Task 1: LLMs</a>
+        <a href="task2.html" class="block font-medium hover:text-mith-teal">Task 2: ETL & Privacy</a>
+        <a href="task3.html" class="block font-medium hover:text-mith-teal">Task 3: Compliance</a>
+        <hr class="border-slate-100">
+        <a href="team.html" class="block font-medium hover:text-mith-teal">Team</a>
+        <a href="results.html" class="block font-medium hover:text-mith-teal">Results</a>
+        <a href="jobs.html" class="block font-bold text-mith-blue">Open Positions</a>
+    </div>
+</nav>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - MITH Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { mith: { dark: '#0a2540', blue: '#005a9c', teal: '#00a8b4', light: '#e6f7f9' } } } }
+        }
+    </script>
+</head>
+<body class="font-sans bg-slate-50 text-slate-700">
+    
+    <div id="nav-container"></div>
+
+    <main class="pt-32 pb-20 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-mith-dark mb-6">Project Outputs</h1>
+        <p class="text-lg text-slate-600 mb-12 max-w-3xl">
+            We are committed to Open Science. All software tools, datasets, and publications resulting from the MITH project will be listed here.
+        </p>
+
+        <h2 class="text-2xl font-bold text-mith-blue mb-6 border-l-4 border-mith-teal pl-4">Software & Tools</h2>
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+            <!--div class="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-bold text-mith-dark">Collaborative Privacy-Preserving ETL</h3>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">In Development</span>
+                </div>
+                <p class="text-sm text-slate-600 mt-2 mb-4">
+                    A tool designed to harmonize healthcare data from diverse sources (EHR, clinical trials) while preserving privacy.
+                </p>
+                <button disabled class="text-slate-400 text-sm font-medium cursor-not-allowed">GitHub Link (Coming Soon)</button>
+            </div-->
+
+            <!--div class="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-bold text-mith-dark">Automated Compliance Monitor</h3>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Planned</span>
+                </div>
+                <p class="text-sm text-slate-600 mt-2 mb-4">
+                    AI-driven checks to ensure data processing workflows adhere to GDPR and ISO 27001 regulations.
+                </p>
+            </div-->
+        </div>
+
+        <h2 class="text-2xl font-bold text-mith-blue mb-6 border-l-4 border-mith-teal pl-4">Scientific Publications</h2>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <table class="min-w-full divide-y divide-slate-200">
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Date</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Title / Venue</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">DOI / URL</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-slate-200">
+                    <!--tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-slate-500">2026 (Expected)</td>
+                        <td class="px-6 py-4 text-sm text-slate-700">
+                            <strong>Privacy-preserving ETL for multicenter studies</strong><br>
+                            <span class="text-slate-500">Planned for IEEE CBMS or similar </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <span class="text-slate-400">Pending</span>
+                        </td>
+                    </tr-->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/load-nav.js"></script>
+
+</body>
+</html>

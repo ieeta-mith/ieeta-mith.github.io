@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - MITH Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { mith: { dark: '#0a2540', blue: '#005a9c', teal: '#00a8b4', light: '#e6f7f9' } } } }
+        }
+    </script>
+</head>
+<body class="font-sans bg-slate-50 text-slate-700">
+
+    <div id="nav-container"></div>
+
+    <main class="pt-32 pb-20 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-mith-dark mb-12 border-b pb-4">Research Team</h1>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm mb-8 flex flex-col md:flex-row gap-8 items-start">
+            <div class="w-32 h-32 bg-slate-200 rounded-full flex-shrink-0 overflow-hidden">
+                <svg class="w-full h-full text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-mith-dark">João Rafael Almeida</h2>
+                <p class="text-mith-blue font-semibold mb-4">Principal Investigator (PI)</p>
+                <p class="mb-4">
+                    João Rafael Almeida is an Assistant Professor at DETI and Researcher at IEETA. He currently serves as the Chief Information Security Officer (CISO) and Director of the Cybersecurity Office at the University of Aveiro. 
+                    His research focuses on data privacy, cybersecurity, and handling sensitive data in medical contexts.
+                </p>
+                <div class="flex gap-4 text-sm font-medium">
+                    <a href="#" class="text-mith-teal hover:underline">Ciência Vitae</a>
+                    <a href="#" class="text-mith-teal hover:underline">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <h3 class="text-xl font-bold text-mith-dark">Sérgio Matos</h3>
+                <p class="text-sm text-slate-500 mb-4">Core Member | IEETA</p>
+                <p class="text-sm mb-4">
+                    Associate Professor and coordinator of the Biomedical Informatics and Technologies group at IEETA. His main research interests are in biomedical and clinical applications of AI and NLP.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+                <h3 class="text-xl font-bold text-mith-dark">José Luis Oliveira</h3>
+                <p class="text-sm text-slate-500 mb-4">Core Member | IEETA Director</p>
+                <p class="text-sm mb-4">
+                    Full Professor and Director of IEETA. He has extensive experience in supervising academic work and large-scale projects involving biomedical data sharing and privacy.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/load-nav.js"></script>
+
+</body>
+</html>
