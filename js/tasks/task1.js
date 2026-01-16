@@ -19,7 +19,7 @@ window.TASK_CONFIG = {
         },
         {
             title: 'Intelligent Query Assistance',
-            description: 'Enabling researchers to ask natural language questions (e.g., "Show me recent heart failure cases") which are translated into database queries.'
+            description: 'Enabling researchers to ask natural language questions which are translated into database queries.'
         }
     ],
     deliverables: [

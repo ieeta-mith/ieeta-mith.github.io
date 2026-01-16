@@ -11,6 +11,13 @@ fetch('nav.html')
                 menu.classList.toggle('hidden');
             });
         }
+        // Set GitHub link URL from project config
+        const githubLink = document.getElementById('github-link');
+        const githubLinkMobile = document.getElementById('github-link-mobile');
+        if (typeof GITHUB_BASE_URL !== 'undefined') {
+            if (githubLink) githubLink.href = GITHUB_BASE_URL;
+            if (githubLinkMobile) githubLinkMobile.href = GITHUB_BASE_URL;
+        }
     })
     .catch(error => console.error('Error loading navigation:', error));
 

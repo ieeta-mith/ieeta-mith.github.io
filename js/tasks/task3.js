@@ -24,7 +24,6 @@ window.TASK_CONFIG = {
     ],
     deliverables: [
         { name: 'Compliance Monitor Tool', months: 4 },
-        { name: 'Regulatory Checklist', months: 8 },
-        { name: 'Journal Paper', months: 8 }
+        { name: 'Regulatory Checklist', months: 8 }
     ]
 };
