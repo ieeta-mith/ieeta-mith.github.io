@@ -128,7 +128,7 @@ function Index() {
 						<p className="text-slate-500 mt-2">IEETA / Universidade de Aveiro</p>
 					</div>
 					<Link
-						to="/"
+						to="/team"
 						className="hidden md:inline-flex items-center text-teal font-semibold hover:underline mt-4 md:mt-0"
 					>
 						View full team <MoveRight className="w-4 h-4 ml-1" />
