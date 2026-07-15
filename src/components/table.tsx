@@ -29,7 +29,13 @@ export const PublicationsTable = () => {
 								<span className="text-slate-500">{pub.publicationPlace}</span>
 							</td>
 							<td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
-								<span className="text-slate-400">Pending</span>
+								{pub.doi !== 'Pending' ? (
+									<a href={pub.link} target="_blank" className="text-teal hover:underline" rel="noopener noreferrer">
+										{pub.doi}
+									</a>
+								) : (
+									<span className="text-slate-400">Pending</span>
+								)}
 							</td>
 						</tr>
 					))}
