@@ -74,7 +74,7 @@ export interface Publication {
 export interface ResearchGrant {
 	title: string;
 	reference: string;
-	status: 'open' | 'attributed' | 'closed';
+	status: 'open' | 'closed';
 	description: string;
 	skills: string;
 	duration: string;

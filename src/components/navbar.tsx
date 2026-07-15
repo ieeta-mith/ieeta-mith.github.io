@@ -89,7 +89,7 @@ export const NavBar = () => {
 							className="text-blue font-bold transition border border-blue px-4 py-2 rounded-full hover:bg-blue cursor-pointer hover:text-white text-sm"
 							onClick={() => navigate({ to: '/jobs' })}
 						>
-							Open Positions
+							Positions
 						</button>
 
 						<a
