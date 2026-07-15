@@ -12,9 +12,9 @@ export const PUBLICATIONS: Publication[] = [
 	{
 		date: '2026 (Accepted)',
 		title: 'A privacy index calculator for federated medical studies',
-		doi: 'Pending',
+		doi: ' 10.3233/SHTI260566',
 		publicationPlace: 'Medical Informatics Europe (MIE), 2026',
-		link: undefined,
+		link: 'https://doi.org/10.3233/shti260566',
 	},
 	{
 		date: '2026 (Accepted)',
