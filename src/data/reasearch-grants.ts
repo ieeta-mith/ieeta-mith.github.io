@@ -4,7 +4,7 @@ export const RESEARCH_GRANTS: ResearchGrant[] = [
 	{
 		title: 'Master Research Grant (2 positions)',
 		reference: 'Public notice 3/2026/Comp.Eng/IEETA',
-		status: 'attributed',
+		status: 'closed',
 		description:
 			'Research in the field of computer engineering within the MITH project, working on tasks related to developing tools for extracting and harmonizing clinical data while ensuring user privacy.',
 		skills:
@@ -22,7 +22,7 @@ export const RESEARCH_GRANTS: ResearchGrant[] = [
 	{
 		title: 'Master Research Grant (2 positions)',
 		reference: 'Public notice Ref16/2026/BI/EngªInf./IEETA',
-		status: 'open',
+		status: 'closed',
 		description:
 			'Research in the field of computer engineering within the MITH project, working on tasks related to developing tools for extracting and harmonizing clinical data while ensuring user privacy.',
 		skills:
@@ -41,7 +41,7 @@ export const RESEARCH_GRANTS: ResearchGrant[] = [
 	{
 		title: 'Ph.D. Research Grant (1 position)',
 		reference: 'Public notice Ref17/2026/BI/EngªInf./IEETA',
-		status: 'open',
+		status: 'closed',
 		description:
 			'Research in the field of computer engineering within the MITH project, working on tasks related to developing tools for extracting and harmonizing clinical data while ensuring user privacy.',
 		skills:
@@ -56,5 +56,23 @@ export const RESEARCH_GRANTS: ResearchGrant[] = [
 		euraxessLink: 'https://euraxess.ec.europa.eu/jobs/441707',
 		mailTo:
 			'mailto:ieeta-bolsas@ua.pt?subject=Reference: Public notice Ref17/2026/BI/EngªInf./IEETA',
+	},
+	{
+		title: 'Master Research Initiation Grant (1 position)',
+		reference: 'Public notice Ref33/2026/BII/EngªInf/IEETA',
+		status: 'open',
+		description:
+			'Research in the field of computer engineering within the MITH project, working on tasks related to developing tools for extracting and harmonizing clinical data while ensuring user privacy.',
+		skills:
+			'Experience and knowledge in the area of unstructured data processing and good software development practices.',
+		duration: '3 Months (Renewable)',
+		startDate: 'September 2026',
+		payment: '€701,12',
+		location: 'IEETA, University of Aveiro',
+		area: 'Computer Engineering',
+		supervisor: 'Prof. João Rafael Almeida',
+		uaLink: 'https://www.ua.pt/pt/noticias/3/98818',
+		euraxessLink: 'https://euraxess.ec.europa.eu/jobs/452879',
+		mailTo:	'mailto:joao.rafael.almeida@ua.pt?subject=Reference: Public notice Ref33/2026/BII/EngªInf/IEETA',
 	},
 ];
