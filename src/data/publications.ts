@@ -19,9 +19,9 @@ export const PUBLICATIONS: Publication[] = [
 	{
 		date: '2026 (Accepted)',
 		title: 'A Serverless Client-Side Privacy Index for Sensitive Data Processing',
-		doi: 'Pending',
+		doi: '10.5220/0015193600004091',
 		publicationPlace:
 			'15th International Conference on Data Science, Technology and Applications (DATA), 2026',
-		link: undefined,
+		link: 'https://doi.org/10.5220/0015193600004091',
 	},
 ];
