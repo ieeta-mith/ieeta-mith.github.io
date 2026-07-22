@@ -33,20 +33,21 @@ export interface MemberCardProps {
 	isLeadInvestigator: boolean;
 }
 
-export interface DissertationCardProps {
+export interface Dissertation {
 	title: string;
-	description: string;
-	status: 'planned' | 'in-progress' | 'completed';
-	link?: string;
+	year: string;
+	master: string;
+	institution: string;
 }
 
 export interface ToolCardProps {
 	title: string;
 	description: string;
-	version?: string;
+	version: string;
 	codeLink?: string;
 	documentationLink?: string;
 	demoLink?: string;
+	taskId: number;
 }
 
 export interface DropdownProps {

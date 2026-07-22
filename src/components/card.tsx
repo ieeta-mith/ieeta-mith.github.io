@@ -1,9 +1,9 @@
 import { Link } from '@tanstack/react-router';
 import { BookOpenText, FileCode, Globe, Info, Link2, MoveRight, User } from 'lucide-react';
+import { TASKS_INFORMATION } from '../data/tasks';
 import type {
 	CoreResearchTasksCardProps,
 	MemberCardProps,
-	DissertationCardProps,
 	ToolCardProps,
 	ResearchGrant,
 } from '../lib/types';
@@ -86,39 +86,6 @@ export const MemberCard = ({
 	);
 };
 
-export const DissertationCard = ({ title, description, status, link }: DissertationCardProps) => {
-	const statusColors =
-		status === 'planned'
-			? 'bg-yellow-100 text-yellow-800'
-			: status === 'in-progress'
-				? 'bg-blue-100 text-blue-800'
-				: 'bg-green-100 text-green-800';
-	return (
-		<div className="bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
-			<div className="flex justify-between items-start">
-				<h3 className="text-lg font-bold text-dark">{title}</h3>
-				<span className={`text-xs font-bold px-2 py-1 rounded ${statusColors}`}>
-					{status === 'planned'
-						? 'Planned'
-						: status === 'in-progress'
-							? 'In Progress'
-							: 'Completed'}
-				</span>
-			</div>
-			<p className="text-sm text-slate-600 mt-2 mb-4">{description}</p>
-			<a
-				href={link ? link : '#'}
-				aria-disabled={link ? undefined : true}
-				target="_blank"
-				rel="noopener noreferrer"
-				className="text-blue font-semibold text-sm flex items-center"
-			>
-				GitHub Link {link ? <MoveRight className="w-4 h-4 ml-1" /> : '(Coming Soon)'}
-			</a>
-		</div>
-	);
-};
-
 export const ToolCard = ({
 	title,
 	description,
@@ -126,14 +93,21 @@ export const ToolCard = ({
 	codeLink,
 	documentationLink,
 	demoLink,
+	taskId,
 }: ToolCardProps) => {
+	const currentTask = TASKS_INFORMATION[taskId - 1];
 	return (
 		<div className="flex flex-col justify-between bg-white p-6 rounded-lg border border-slate-200 hover:shadow-md transition">
 			<div className="flex justify-between items-start">
 				<h3 className="text-lg font-bold text-mith-dark">{title}</h3>
-				<span className="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">
-					{version}
-				</span>
+				<div className="flex items-center gap-2">
+					<Link to="/tasks/$taskId" params={{ taskId: taskId as unknown as string }} className={`${currentTask.bgColor} text-white text-xs font-bold px-2 py-1 rounded-full hover:scale-105 hover:shadow-x transition`}>
+						{currentTask.label}
+					</Link>
+					<span className="bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">
+						{version}
+					</span>
+				</div>
 			</div>
 			<p className="text-sm text-slate-600 mt-2 mb-4">{description}</p>
 			<div className="flex flex-row gap-10">
