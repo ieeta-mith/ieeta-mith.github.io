@@ -60,7 +60,7 @@ export const RESEARCH_GRANTS: ResearchGrant[] = [
 	{
 		title: 'Master Research Initiation Grant (1 position)',
 		reference: 'Public notice Ref33/2026/BII/EngªInf/IEETA',
-		status: 'open',
+		status: 'closed',
 		description:
 			'Research in the field of computer engineering within the MITH project, working on tasks related to developing tools for extracting and harmonizing clinical data while ensuring user privacy.',
 		skills:
