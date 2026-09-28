@@ -2,8 +2,8 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { MASTER_THESIS } from '../data/dissertations';
 import { SOFTWARE_TOOLS } from '../data/tools';
-import { DissertationCard, ToolCard } from '../components/card';
-import { PublicationsTable } from '../components/table';
+import { ToolCard } from '../components/card';
+import { DissertationTable, PublicationsTable } from '../components/table';
 
 export const Route = createFileRoute('/results')({
 	component: RouteComponent,
@@ -23,16 +23,8 @@ function RouteComponent() {
 			</h2>
 
 			{MASTER_THESIS.length > 0 ? (
-				<div className="grid md:grid-cols-2 gap-6 mb-16 w-full">
-					{MASTER_THESIS.map((thesis, index) => (
-						<DissertationCard
-							key={index}
-							title={thesis.title}
-							description={thesis.description}
-							status={thesis.status}
-							link={thesis.link}
-						/>
-					))}
+				<div className="pb-16">
+					<DissertationTable />
 				</div>
 			) : (
 				<p className="text-slate-600 w-full items-center text-center py-10">
@@ -54,6 +46,7 @@ function RouteComponent() {
 							codeLink={tool.codeLink}
 							documentationLink={tool.documentationLink}
 							demoLink={tool.demoLink}
+							taskId={tool.taskId}
 						/>
 					))}
 				</div>

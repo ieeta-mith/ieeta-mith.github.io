@@ -1,16 +1,17 @@
-import type { DissertationCardProps } from "../lib/types";
+import type { Dissertation } from "../lib/types";
 
-export const MASTER_THESIS: DissertationCardProps[] = [
-    // {
-    //     title: "Collaborative Privacy-Preserving ETL",
-    //     description: "A tool designed to harmonize healthcare data from diverse sources (EHR, clinical trials) while preserving privacy.",
-    //     status: "In Development",
-    //     githubLink: null
-    // },
-    // {
-    //     title: "Automated Compliance Monitor",
-    //     description: "AI-driven checks to ensure data processing workflows adhere to GDPR and ISO 27001 regulations.",
-    //     status: "Planned",
-    //     githubLink: null
-    // }
+export const MASTER_THESIS: Dissertation[] = [
+    {
+        title: 'A web platform for assessing the feasibility of federated and distributed health research',
+        year: '2026',
+        master: 'Master in Computer Engineering',
+        institution: 'University of Aveiro | IEETA',
+    },
+    {
+        title: 'A conversational framework for knowledge retrieval',
+        year: '2026',   
+        master: 'Master in Computer Engineering',
+        institution: 'University of Aveiro | IEETA',
+
+    }
 ];
