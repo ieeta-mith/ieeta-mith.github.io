@@ -2,12 +2,12 @@ import type { Publication } from "../lib/types";
 
 export const PUBLICATIONS: Publication[] = [
 	{
-		date: '2026 (Accepted)',
+		date: '2026 (Published)',
 		title: 'DataPrivScore: A framework for Privacy Assessment in Healthcare Datasets',
-		doi: 'Pending',
+		doi: '10.1109/CBMS69103.2026.00258',
 		publicationPlace:
 			'39th IEEE International Symposium on Computer-Based Medical Systems (CBMS), 2026',
-		link: undefined,
+		link: "https://doi.ieeecomputersociety.org/10.1109/CBMS69103.2026.00258",
 	},
 	{
 		date: '2026 (Published)',
