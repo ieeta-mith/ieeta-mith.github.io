@@ -15,7 +15,7 @@ export const SOFTWARE_TOOLS: ToolCardProps[] = [
         title: 'DataPrivScore',
         description:
             'Client-side web application that evaluates the privacy level of datasets using multiple privacy metrics, providing an aggregated privacy score called the Privacy Index and actionable recommendations for improvement.',
-        version: 'release-v1.0.1',
+        version: 'release-v2.0.0',
         codeLink: 'https://github.com/ieeta-mith/dataprivscore',
         demoLink: 'https://ieeta-mith.github.io/DataPrivScore/',
         documentationLink: undefined,
