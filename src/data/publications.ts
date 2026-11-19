@@ -1,4 +1,4 @@
-import type { Publication } from "../lib/types";
+import type { Publication } from '../lib/types';
 
 export const PUBLICATIONS: Publication[] = [
 	{
@@ -7,7 +7,7 @@ export const PUBLICATIONS: Publication[] = [
 		doi: '10.1109/CBMS69103.2026.00258',
 		publicationPlace:
 			'39th IEEE International Symposium on Computer-Based Medical Systems (CBMS), 2026',
-		link: "https://doi.ieeecomputersociety.org/10.1109/CBMS69103.2026.00258",
+		link: 'https://doi.org/10.1109/CBMS69103.2026.00258',
 	},
 	{
 		date: '2026 (Published)',
