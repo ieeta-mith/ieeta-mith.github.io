@@ -30,6 +30,7 @@ export interface MemberCardProps {
 	workplace: string;
 	cienciaVitae: string;
 	googleScholar: string;
+	photo?: string;
 	isLeadInvestigator: boolean;
 }
 
@@ -87,4 +88,13 @@ export interface ResearchGrant {
 	uaLink: string;
 	euraxessLink: string;
 	mailTo: string;
+}
+
+export interface ResearchScholarship {
+	name: string;
+	scholarship: string;
+	reference: string;
+	startDate: string;
+	endDate?: string;
+	photo?: string;
 }

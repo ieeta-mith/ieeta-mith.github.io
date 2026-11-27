@@ -6,6 +6,7 @@ import type {
 	MemberCardProps,
 	ToolCardProps,
 	ResearchGrant,
+	ResearchScholarship,
 } from '../lib/types';
 
 export const CoreResearchTasksCard = ({
@@ -38,20 +39,29 @@ export const CoreResearchTasksCard = ({
 	);
 };
 
+const Photo = ({ name, photo, className }: { name: string; photo?: string; className: string }) => (
+	<div className={`${className} bg-slate-200 rounded-full shrink-0 overflow-hidden`}>
+		{photo ? (
+			<img src={photo} alt={name} loading="lazy" className="w-full h-full object-cover" />
+		) : (
+			<User className="w-full h-full text-slate-300" />
+		)}
+	</div>
+);
+
 export const MemberCard = ({
 	name,
 	description,
 	workplace,
 	cienciaVitae,
 	googleScholar,
+	photo,
 	isLeadInvestigator,
 }: MemberCardProps) => {
 	if (isLeadInvestigator) {
 		return (
 			<div className="bg-white p-8 rounded-xl shadow-sm mb-8 flex flex-col md:flex-row gap-8 items-start">
-				<div className="w-32 h-32 bg-slate-200 rounded-full shrink-0 overflow-hidden">
-					<User className="w-full h-full text-slate-300" />
-				</div>
+				<Photo name={name} photo={photo} className="w-32 h-32" />
 				<div>
 					<h2 className="text-2xl font-bold text-mith-dark">{name}</h2>
 					<p className="text-blue font-semibold mb-4">Principal Investigator (PI) | {workplace}</p>
@@ -71,8 +81,13 @@ export const MemberCard = ({
 
 	return (
 		<div className="bg-white p-8 rounded-xl shadow-sm">
-			<h3 className="text-xl font-bold text-mith-dark">{name}</h3>
-			<p className="text-sm text-slate-500 mb-4">Core Member | {workplace}</p>
+			<div className="flex items-center gap-4 mb-4">
+				<Photo name={name} photo={photo} className="w-20 h-20" />
+				<div>
+					<h3 className="text-xl font-bold text-mith-dark">{name}</h3>
+					<p className="text-sm text-slate-500">Core Member | {workplace}</p>
+				</div>
+			</div>
 			<p className="text-sm mb-4">{description}</p>
 			<div className="flex gap-4 text-sm font-medium">
 				<a href={cienciaVitae} target="_blank" className="text-teal hover:underline">
@@ -81,6 +96,29 @@ export const MemberCard = ({
 				<a href={googleScholar} target="_blank" className="text-teal hover:underline">
 					Google Scholar
 				</a>
+			</div>
+		</div>
+	);
+};
+
+export const ScholarshipCard = ({
+	name,
+	scholarship,
+	reference,
+	startDate,
+	endDate,
+	photo,
+}: ResearchScholarship) => {
+	return (
+		<div className="bg-white p-6 rounded-xl shadow-sm flex gap-4 items-start">
+			<Photo name={name} photo={photo} className="w-16 h-16" />
+			<div>
+				<h3 className="text-lg font-bold text-mith-dark">{name}</h3>
+				<p className="text-sm text-teal font-semibold">{scholarship}</p>
+				<p className="text-sm text-slate-500">
+					{startDate} – {endDate ?? 'Present'}
+				</p>
+				<p className="text-xs text-slate-400 mt-2">Ref: {reference}</p>
 			</div>
 		</div>
 	);
