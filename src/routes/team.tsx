@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createFileRoute } from '@tanstack/react-router';
-import { TEAM_MEMBERS } from '../data/team';
-import { MemberCard } from '../components/card';
+import { RESEARCH_SCHOLARSHIPS, TEAM_MEMBERS } from '../data/team';
+import { MemberCard, ScholarshipCard } from '../components/card';
 
 export const Route = createFileRoute('/team')({
 	component: RouteComponent,
@@ -22,6 +22,7 @@ function RouteComponent() {
 				workplace={leadInvestigator?.workplace || ''}
 				cienciaVitae={leadInvestigator?.cienciaVitae || ''}
 				googleScholar={leadInvestigator?.googleScholar || ''}
+				photo={leadInvestigator?.photo}
 				isLeadInvestigator
 			/>
 
@@ -35,10 +36,21 @@ function RouteComponent() {
 							workplace={member.workplace}
 							cienciaVitae={member.cienciaVitae}
 							googleScholar={member.googleScholar}
+							photo={member.photo}
 							isLeadInvestigator={false}
 						/>
 					)
 				)}
+			</div>
+
+			<h2 className="text-2xl font-bold text-dark mt-16 mb-8 border-b border-slate-200 pb-4">
+				Research Scholarships
+			</h2>
+
+			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+				{RESEARCH_SCHOLARSHIPS.map((scholar) => (
+					<ScholarshipCard key={scholar.name} {...scholar} />
+				))}
 			</div>
 		</main>
 	);

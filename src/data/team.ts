@@ -1,6 +1,9 @@
+import type { ResearchScholarship } from '../lib/types';
+
 export const TEAM_MEMBERS = [
 	{
 		name: 'João Rafael Almeida',
+		photo: '/team/joao-rafael-almeida.jpg',
 		role: 'Principal Investigator',
 		roleColor: 'text-blue',
 		description:
@@ -11,6 +14,7 @@ export const TEAM_MEMBERS = [
 	},
 	{
 		name: 'Sérgio Matos',
+		photo: '/team/sergio-matos.jpg',
 		role: 'Core Member',
 		roleColor: 'text-slate-500',
 		description:
@@ -21,6 +25,7 @@ export const TEAM_MEMBERS = [
 	},
 	{
 		name: 'José Luís Oliveira',
+		photo: '/team/jose-luis-oliveira.jpg',
 		role: 'Core Member',
 		roleColor: 'text-slate-500',
 		description:
@@ -28,5 +33,51 @@ export const TEAM_MEMBERS = [
 		workplace: 'IEETA Director',
 		cienciaVitae: 'https://www.cienciavitae.pt/portal/F716-5261-2F01',
 		googleScholar: 'https://scholar.google.com/citations?user=t68oO10AAAAJ&hl=pt-PT',
+	},
+];
+
+export const RESEARCH_SCHOLARSHIPS: ResearchScholarship[] = [
+	{
+		name: 'José Gameiro',
+		photo: '/team/jose-gameiro.jpg',
+		scholarship: 'Research Grant (BI) – Master',
+		reference: '3/2026/Comp.Eng/IEETA',
+		startDate: 'Mar 2026',
+	},
+	{
+		name: 'Sebastião Teixeira',
+		photo: '/team/sebastiao-teixeira.jpg',
+		scholarship: 'Research Grant (BI) – Master',
+		reference: '3/2026/Comp.Eng/IEETA',
+		startDate: 'Mar 2026',
+	},
+	{
+		name: 'Henrique Teixeira',
+		photo: '/team/henrique-teixeira.jpg',
+		scholarship: 'Research Grant (BI) – Master',
+		reference: 'Ref16/2026/BI/EngªInf./IEETA',
+		startDate: 'Sep 2026',
+	},
+	{
+		name: 'Martim Santos',
+		photo: '/team/martim-santos.jpg',
+		scholarship: 'Research Grant (BI) – Master',
+		reference: 'Ref16/2026/BI/EngªInf./IEETA',
+		startDate: 'Sep 2026',
+	},
+	{
+		name: 'José Bagagem',
+		photo: '/team/jose-bagagem.jpg',
+		scholarship: 'Research Initiation Grant (BII)',
+		reference: 'Ref33/2026/BII/EngªInf/IEETA',
+		startDate: 'Sep 2026',
+	},
+	{
+		name: 'Daniel Ferreira',
+		photo: '/team/daniel-ferreira.jpg',
+		scholarship: 'Research Grant (BI) – Ph.D.',
+		reference: 'Ref17/2026/BI/EngªInf./IEETA',
+		startDate: 'Jul 2026',
+		endDate: 'Sep 2026',
 	},
 ];
