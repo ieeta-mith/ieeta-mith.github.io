@@ -6,7 +6,7 @@ export const Footer = () => {
 					<span className="font-bold text-2xl text-white block mb-4">MITH</span>
 					<p className="mb-4 text-sm">Medical Insights using Textual Harmonization.</p>
 					<p className="text-xs text-slate-400">Ref: 2024.18230.PEX</p>
-					<p className="text-xs text-slate-400">Duration: 18 Months (Sept 2025 - Feb 2027)</p>
+					<p className="text-xs text-slate-400">Duration: 18 Months (Jan 2026 - Jun 2027)</p>
 				</div>
 
 				<div>
